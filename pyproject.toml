@@ -1,0 +1,20 @@
+[project]
+name = "mlops"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "jurados", email = "astro.jurados@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "kfp>=2.17.0",
+    "pre-commit>=4.6.2",
+]
+
+[project.scripts]
+mlops = "mlops:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
